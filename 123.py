@@ -32,12 +32,13 @@ if uploaded_file is not None:
     else:
         st.write("Aucun graphique sélectionné.")
 st.write("Merci d'avoir utilisé notre application Streamlit !")
+
 #4 display du graphique en fonction
 age=st.slider('quel age vous avez', 0, 100, 25)
-st.write(f'vous avez (age) ages,')
+st.write(f'vous avez {age} ages,')
 
 import numpy as np
 
 #checkbox
 if st.checkbox('afficher en tableau aleatoire'):
-    st.write(pd.DataFrame(np.random.randn(5,3),columns=['A','B','C']))
+    st.write(pd.DataFrame(np.random.randn(5, 3), columns=['A','B','C']))
