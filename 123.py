@@ -36,7 +36,7 @@ st.write("Merci d'avoir utilisé notre application Streamlit !")
 #4 display du graphique en fonction
 age=st.slider('quel age vous avez', 0, 100, 25)
 st.write(f'vous avez {age} ages,')
-
+import pandas as pd
 import numpy as np
 
 #checkbox
